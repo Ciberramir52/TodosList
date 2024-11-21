@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#todo-form-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#todo-form-container form, #new-project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#todo-form-container input {
+    width: 350px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#todo-form-container select {
+    width: 350px;
+    font-size: 18px;
+    padding: 7px 10px;
+}
+
+#todo-form-container button {
+    font-size: 18px;
+    border: none;
+    padding: 0 10px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+#todo-form-container label {
+    font-size:  20px;
+}
+
+#projects-container {
+    padding: 15px 20px;
+}
+
+.project {
+    margin: 30px 0;
+}
+
+.todos-container {
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 20px;
+}
+
+.todo {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 0 15px 30px;
+}
+
+.expandible {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.hide {
+    display: none;
+}
+
+.todo button {
+    width: 100%;
+}
+
+.toggle-content {
+    margin-top: 10px;
+    color: blue;
+    background-color: #fff;
+    border: none;
+    text-align: end;
+    cursor: pointer;
+}
